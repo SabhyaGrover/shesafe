@@ -1,0 +1,77 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "she safe",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel "
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what is this",
+            "show help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "exit",
+            "stop"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+            "go back "
+          ]
+        },
+        {
+          "name": "callContact",
+          "slots": [
+            {
+              "name": "contacts",
+              "type": "contacts"
+            }
+          ],
+          "samples": [
+            "dial {contacts}",
+            "call {contacts}",
+            "call for help"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "police_no",
+              "name": {
+                "value": "police",
+                "synonyms": [
+                  "officers"
+                ]
+              }
+            },
+            {
+              "id": "hospital_no",
+              "name": {
+                "value": "hospital",
+                "synonyms": [
+                  "clinic",
+                  "medical centre",
+                  "doctor"
+                ]
+              }
+            }
+          ],
+          "name": "contacts"
+        }
+      ]
+    }
+  },
+  "version": "3"
+}
